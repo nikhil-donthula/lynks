@@ -1,5 +1,7 @@
 # lynks - python scripts to open multipe links/URLs from a csv or excel file
 
+*Tired of opening multiple links/URLs every day by clicking all your bookmarks in your browser? Worry not! Here are the scripts to reduce your load by a bit😜*
+
 This module consists of 2 scripts
 
 1. **open_links_multiple_windows** : Opens links/URLs from each sheet of an Excel file in separate Chrome windows across Linux and Windows.
@@ -8,11 +10,13 @@ This module consists of 2 scripts
 Prerequisites:
 
 * Softwares to be installed: *python, chrome*
-* 
+* Works only in windows and linux OS
 
 ### open_links_multiple_windows:
 
-How to execute?
+Opens links/URLs from each sheet of an Excel file in separate Chrome windows across Linux and Windows.
+
+**How to execute?**
 
 * clone the project
 
@@ -49,7 +53,9 @@ How to execute?
 
 ### open_links_single_window:
 
-How to execute?
+Opens links/URLs from a CSV file in Chrome across Linux and Windows.
+
+**How to execute?**
 
 * clone the project
 
