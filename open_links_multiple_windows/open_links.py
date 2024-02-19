@@ -1,5 +1,7 @@
 import openpyxl
 import webbrowser
+import platform
+import subprocess
 
 def open_urls_in_chrome(excel_file_path):
     """Opens URLs from each sheet of an Excel file in separate Chrome windows on Linux."""
@@ -68,17 +70,22 @@ def open_urls_in_window(urls):
     """Opens the given URLs in a new Chrome window."""
 
     try:
-        # import os
-        # chrome_path = "/usr/bin/google-chrome"  # Customize for your Chrome path
-        # if not os.path.exists(chrome_path):
-        #     raise ValueError("Chrome path not found")
         count = 0
-        for url in urls:            
-            if count == 0:
-                webbrowser.get().open_new(url)
-                count+=1
-            else:
-                webbrowser.get().open(url)   
+        if platform.system() == "Windows":
+            chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+            for url in urls:            
+                if count == 0:
+                  subprocess.Popen([chrome_path, "--new-window", url])
+                  count+=1
+                else:
+                    subprocess.Popen([chrome_path, "--new-tab", url])
+        else:  #Linux (e.g., Ubuntu)
+            for url in urls:            
+                if count == 0:
+                    webbrowser.get().open_new(url)
+                    count+=1
+                else:
+                    webbrowser.get().open(url)  
     except Exception as e:
         print(f"Error opening Chrome window: {e}")
 
