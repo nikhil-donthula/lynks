@@ -24,7 +24,7 @@ def open_urls_in_chrome(excel_file_path):
     print(f"Opened {windows_opened} Chrome windows with URLs from {excel_file_path}")
 
 def get_url_column(sheet):
-    """Heuristically identifies the column containing URLs."""
+    """ identifies the column containing URLs."""
 
     column_index = None
 
@@ -67,24 +67,18 @@ def is_valid_url(url):
 def open_urls_in_window(urls):
     """Opens the given URLs in a new Chrome window."""
 
-    # Use webbrowser module without external libraries
     try:
-        import os
-        chrome_path = "/usr/bin/google-chrome"  # Customize for your Chrome path
-        if not os.path.exists(chrome_path):
-            raise ValueError("Chrome path not found")
+        # import os
+        # chrome_path = "/usr/bin/google-chrome"  # Customize for your Chrome path
+        # if not os.path.exists(chrome_path):
+        #     raise ValueError("Chrome path not found")
         count = 0
-        for url in urls:
-            print(count)
-            print("nik"+url)
+        for url in urls:            
             if count == 0:
                 webbrowser.get().open_new(url)
                 count+=1
             else:
-                print("nkj"+count)
-                webbrowser.get().open(url)
-            
-        
+                webbrowser.get().open(url)   
     except Exception as e:
         print(f"Error opening Chrome window: {e}")
 

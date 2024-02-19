@@ -6,8 +6,6 @@ def open_urls_in_chrome(csv_file):
     """
     Opens URLs from a CSV file in Chrome across Linux and Windows.
 
-    Args:
-        csv_file (str): Path to the CSV file containing URLs.
     """
 
     with open(csv_file, newline='') as csvfile:
@@ -18,7 +16,7 @@ def open_urls_in_chrome(csv_file):
                 try:
                     if platform.system() == "Windows":
                         webbrowser.get('chrome').open(url)
-                    else:  # Assuming Linux (e.g., Ubuntu)
+                    else:  #Linux (e.g., Ubuntu)
                         webbrowser.get('x-www-browser').open(url)
                 except webbrowser.exceptions.webbrowseropenerror as e:
                     print(f"Error opening '{url}': {e}")
