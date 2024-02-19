@@ -35,6 +35,10 @@ Opens links/URLs from each sheet of an Excel file in separate Chrome windows acr
    python -m pip install platform
    python -m pip install subprocess
   ```
+* change directory to *open_links_multiple_windows* folder
+  ```
+  cd open_links_multiple_windows
+  ```
 * execute the 'open_links.py' file.
 
   ###### Windows:
@@ -63,6 +67,10 @@ Opens links/URLs from a CSV file in Chrome across Linux and Windows.
   git clone https://github.com/nikhil-donthula/lynks.git
   ```
 * add all the links in csv file 'links.csv' presnt in *open_links_single_window* folder
+* change directory to *open_links_single_window* folder
+  ```
+  cd open_links_single_window
+  ```
 * install the modules
 
   ```
