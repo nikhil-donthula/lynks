@@ -56,7 +56,7 @@ Opens links/URLs from each sheet of an Excel file in separate Chrome windows acr
   python3 open_links.py
   ```
 
-*Oh Noo!!! I have to run a command to open my links/URLs?*😒 --- Dont Worry if this is your feeling. Lets make it more simple for us.
+*Oh Noo!!! I have to run a command to open my links/URLs?*😒 --- Dont Worry if this is your feeling. Lets make it more simple.
 
 Lets do few more steps:
 
@@ -65,7 +65,6 @@ Lets do few more steps:
   Just double click on the *windows_shortcut_multi.sh* file from your Files explorer to open chrome browser with all the links present in the excel sheet
 
   *Yeeehaaaa!!!🥳 we are done with the setup.*
-
 * For **Linux OS**:
   Execute the command
 
@@ -119,14 +118,13 @@ Opens links/URLs from a CSV file in Chrome across Linux and Windows.
   python3 open_links_csv.py
   ```
 
-*Oh Noo!!! I have to run a command to open my links/URLs?*😒 --- Dont Worry if this is your feeling. Lets make it more simple for us.
+*Oh Noo!!! I have to run a command to open my links/URLs?*😒 --- Dont Worry if this is your feeling. Lets make it more simple.
 
 * For   **Windows OS**:
   when ever you want to open all the links in the excel sheet:
   Just double click on the *windows_shortcut_single.sh* file from your Files explorer to open chrome browser with all the links present in the excel sheet.
 
   *Yeeehaaaa!!!🥳 we are done with the setup.*
-
 * Linux OS:
   Execute the command
 
