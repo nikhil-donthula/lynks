@@ -64,7 +64,7 @@ Lets do few more steps:
   when ever you want to open all the links in the excel sheet:
   Just double click on the *windows_shortcut_multi.sh* file from your Files explorer to open chrome browser with all the links present in the excel sheet
 
-  *Yeeehaaaa!!! we are done with the setup.*
+  *Yeeehaaaa!!!🥳 we are done with the setup.*
 
 * For **Linux OS**:
   Execute the command
@@ -76,7 +76,7 @@ Lets do few more steps:
   Now when ever you want to open all the links in the excel sheet:
   Just right click on the *linux_shortcut_multi.sh* file and click *Run as a Program* from your Files explorer to open chrome browser with all the links present in the excel sheet
 
-  *Yeeehaaaa!!! we are done with the setup.*
+  *Yeeehaaaa!!!🥳 we are done with the setup.*
 
 ### open_links_single_window:
 
@@ -125,7 +125,8 @@ Opens links/URLs from a CSV file in Chrome across Linux and Windows.
   when ever you want to open all the links in the excel sheet:
   Just double click on the *windows_shortcut_single.sh* file from your Files explorer to open chrome browser with all the links present in the excel sheet.
 
-  *Yeeehaaaa!!! we are done with the setup.*
+  *Yeeehaaaa!!!🥳 we are done with the setup.*
+
 * Linux OS:
   Execute the command
 
@@ -135,4 +136,4 @@ Opens links/URLs from a CSV file in Chrome across Linux and Windows.
   Now when ever you want to open all the links in the csv sheet:
   Just right click on the *linux_shortcut_single.sh* file from your Files explorer and click *Run as a Program* to open chrome browser with all the links present in the csv file
 
-  *Yeeehaaaa!!! we are done with the setup.*
+  *Yeeehaaaa!!!🥳 we are done with the setup.*
