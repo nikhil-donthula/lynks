@@ -1,6 +1,7 @@
 import csv
 import webbrowser
 import platform
+import subprocess
 
 def open_urls_in_chrome(csv_file):
     """
@@ -15,7 +16,9 @@ def open_urls_in_chrome(csv_file):
             if url:  # Check for empty URLs
                 try:
                     if platform.system() == "Windows":
-                        webbrowser.get('chrome').open(url)
+                        chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+                        subprocess.Popen([chrome_path, "--new-tab", url])
+                        #webbrowser.get('chrome').open(url)
                     else:  #Linux (e.g., Ubuntu)
                         webbrowser.get('x-www-browser').open(url)
                 except webbrowser.exceptions.webbrowseropenerror as e:
