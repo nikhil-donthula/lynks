@@ -129,6 +129,7 @@ Opens links/URLs from a CSV file in Chrome across Linux and Windows.
   Execute the command
 
   ```
+  test
   chmod +x linux_shortcut_multi.sh
   ```
   Now when ever you want to open all the links in the csv sheet:
